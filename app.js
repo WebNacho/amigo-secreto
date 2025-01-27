@@ -29,11 +29,9 @@ function recorrerAmigos() {
 };
 
 function sortearAmigo() {
-    //verificar si el array amigos esta vacio
     if (amigos.length == 0) {
         alert("No hay amigos para ordenar");
     }else {
-        //generar indice aleatorio
         let indiceAleatorio = Math.floor(Math.random() * amigos.length);
         let amigoSorteado = document.getElementById("resultado");
         amigoSorteado.textContent = amigos[indiceAleatorio];
