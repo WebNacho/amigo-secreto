@@ -35,5 +35,6 @@ function sortearAmigo() {
         let indiceAleatorio = Math.floor(Math.random() * amigos.length);
         let amigoSorteado = document.getElementById("resultado");
         amigoSorteado.textContent = amigos[indiceAleatorio];
+        listaAmigos.innerHTML = "";
     };
 };
